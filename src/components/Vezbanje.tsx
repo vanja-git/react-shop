@@ -9,6 +9,8 @@ import image2 from "./lf-manimg.jpg"
 import Firstdivniz from "./Firstdivniz";
 import Gymsniz from "./Gymsniz";
 import Gymsniz2 from "./Gymsniz2";
+import PametnaKockica from "./PametnaKockica";
+import KockicaBoja from "./KockicaBoja";
 
 
 
@@ -44,8 +46,17 @@ const Vezbanje = () => {
       <MyFirstComponent />
       Hello I'am App
       <MyFirstComponent />
-      <Kockica />
+      <PametnaKockica />
+      <PametnaKockica />
+      <PametnaKockica />
+      <KockicaBoja color="" />
+      <KockicaBoja color="red" />
+      <KockicaBoja color="green" />
+      <KockicaBoja color="orange" />
+      <KockicaBoja color="violet" />
+      <KockicaBoja color="blue" />
       <Kockica broj={5} />
+      <Kockica />
       <Kockica broj={6} />
       <Kockica nekitext="nesto" />
       <NizKockica niz={[1, 3, 9, 4, 6, 2]} />

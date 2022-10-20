@@ -8,6 +8,19 @@ img {width:100%; max-width:100%; height:auto;}
   width: 40px;
   height: 40px;
   border: 1px solid black;
+
+  &.kockica-pametna {
+    cursor: pointer;
+  }
+
+  &.red {
+    background-color: red;
+  }
+
+  &.green {background-color: green;}
+  &.orange {background-color: orange;}
+  &.violet {background-color: violet;}
+  &.blue {background-color: blue;}
 }
 
 .niz-kockica, .circles-niz {
