@@ -7,6 +7,7 @@ const NizKockica = (props: any)=> {
         props.niz.map((broj: any, index: number)=>{
           return (
             <Kockica key={index} broj={broj} />
+            
           );
         })
       }
