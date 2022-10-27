@@ -1,7 +1,5 @@
 import Vezbanje from "./Vezbanje";
 
-
-
 const App = () => {
   return (
     <div>

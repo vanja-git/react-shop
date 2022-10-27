@@ -19,8 +19,9 @@ img {width:100%; max-width:100%; height:auto;}
 
   &.green {background-color: green;}
   &.orange {background-color: orange;}
-  &.violet {background-color: violet;}
+  &.purple {background-color: violet;}
   &.blue {background-color: blue;}
+  &.yellow {background-color: yellow;}
 }
 
 .niz-kockica, .circles-niz {
@@ -48,4 +49,6 @@ img {width:100%; max-width:100%; height:auto;}
 .firstdiv-niz, .gyms-niz {display: flex; flex-direction:row; margin-top:80px;}
 .first-div {width:400px; background-color: grey;}
 .gym-div {width:400px; background-color: violet;}
- 
+
+.plusminus-wrap {width:350px; height:100px; border:1px solid black; display: flex; flex-direction: row;}
+.plusminus-box {cursor: pointer; outline: 1px solid red; flex:1;}

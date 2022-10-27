@@ -1,32 +1,4 @@
-
 import Firstdiv from "./Firstdiv";
-
-/*
-const gyms = [
-
-  {
-      name: "Tina",
-      city: "New York",
-      imgUrl: "https://www.lagreefitness.com/img/lagreefitness-home-micro-x2.jpg"
-  },
-  {
-      name: "Maria",
-      city: "Denver",
-      imgUrl: "https://www.lagreefitness.com/img/lagreefitness-mini-homethumb-x2.jpg"
-  },
-  {
-      name: "Patricia",
-      city: "Santa Monica",
-      imgUrl: "https://www.lagreefitness.com/img/lagreefitness-home-minipro-x2.jpg"
-  },
-  {
-      name: "Monica",
-      city: "Tampa",
-      imgUrl: "https://www.lagreefitness.com/img/mega-home-hover.jpg"
-  }
-]
-*/
-
 
 const Gymsniz = (props: any) => {
   const gyms: any = props.niz;

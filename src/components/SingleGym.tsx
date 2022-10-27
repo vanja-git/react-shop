@@ -4,6 +4,7 @@ const SingleGym = (props: any) => {
   return (
     <div className="gym-details">
       <div className="persons-name">{gym.name}</div>
+      <div className="persons-age">{gym.age}</div>
       <img src={gym.imgUrl} />
       <div className="persons-city">{gym.city}</div>
     </div>

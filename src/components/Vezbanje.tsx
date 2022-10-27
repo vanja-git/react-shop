@@ -11,6 +11,10 @@ import Gymsniz from "./Gymsniz";
 import Gymsniz2 from "./Gymsniz2";
 import PametnaKockica from "./PametnaKockica";
 import KockicaBoja from "./KockicaBoja";
+import DodajBroj from "./DodajBroj";
+import PovecajSmanji from "./PovecajSmanji";
+import MatrixKockica from "./MatrixKockica";
+import RedKockica from "./RedKockica";
 
 
 
@@ -19,6 +23,7 @@ import KockicaBoja from "./KockicaBoja";
 const gyms = [
   {
       name: "Tina",
+      age: "28",
       city: "New York",
       imgUrl: "https://www.lagreefitness.com/img/lagreefitness-home-micro-x2.jpg"
   },
@@ -45,10 +50,14 @@ const Vezbanje = () => {
     <div className="App">
       <MyFirstComponent />
       Hello I'am App
+      <RedKockica kolikoKolona={7} />
+      <MatrixKockica kolikoRedova={3} kolikoKolona={5} />
       <MyFirstComponent />
+      <PovecajSmanji />
       <PametnaKockica />
       <PametnaKockica />
       <PametnaKockica />
+      <DodajBroj/>
       <KockicaBoja color="" />
       <KockicaBoja color="red" />
       <KockicaBoja color="green" />
