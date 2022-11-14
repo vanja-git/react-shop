@@ -15,10 +15,9 @@ import DodajBroj from "./DodajBroj";
 import PovecajSmanji from "./PovecajSmanji";
 import MatrixKockica from "./MatrixKockica";
 import RedKockica from "./RedKockica";
-
-
-
-
+import RedPovecajSmanji from "./RedPovecajSmanji";
+import ViseManjeBoja from "./ViseManjeBoja";
+import Bockalica from "./Bockalica";
 
 const gyms = [
   {
@@ -48,8 +47,14 @@ const gyms = [
 const Vezbanje = () => {
   return (
     <div className="App">
-      <MyFirstComponent />
+      
       Hello I'am App
+      <MyFirstComponent />
+      <Bockalica />
+      <br />
+      <br />
+      <ViseManjeBoja />
+      <RedPovecajSmanji  kolikoKolona={3} />
       <RedKockica kolikoKolona={7} />
       <MatrixKockica kolikoRedova={3} kolikoKolona={5} />
       <MyFirstComponent />

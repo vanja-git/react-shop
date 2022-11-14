@@ -9,14 +9,9 @@ img {width:100%; max-width:100%; height:auto;}
   height: 40px;
   border: 1px solid black;
 
-  &.kockica-pametna {
-    cursor: pointer;
-  }
+  &.kockica-pametna {cursor: pointer;}
 
-  &.red {
-    background-color: red;
-  }
-
+  &.red {background-color: red;}
   &.green {background-color: green;}
   &.orange {background-color: orange;}
   &.purple {background-color: violet;}
@@ -46,9 +41,18 @@ img {width:100%; max-width:100%; height:auto;}
   background:yellow; 
   flex:1;}
 
-.firstdiv-niz, .gyms-niz {display: flex; flex-direction:row; margin-top:80px;}
+.firstdiv-niz, .gyms-niz, .red-povecajsmanji {display: flex; flex-direction:row; margin-top:80px;}
 .first-div {width:400px; background-color: grey;}
 .gym-div {width:400px; background-color: violet;}
 
 .plusminus-wrap {width:350px; height:100px; border:1px solid black; display: flex; flex-direction: row;}
 .plusminus-box {cursor: pointer; outline: 1px solid red; flex:1;}
+.plusminus-box {
+  &.green {background:green;}
+  &.purple {background-color: violet;}
+  &.blue {background-color: blue;}
+} 
+
+.red-povecajsmanji .plusminus-wrap  {border:2px solid blue; margin-right:15px;width: 280px; height: 40px;} 
+
+
