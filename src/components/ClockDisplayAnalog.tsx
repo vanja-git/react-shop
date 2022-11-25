@@ -13,17 +13,43 @@ const ClockDisplayAnalog = (props: any) => {
     const satiGlatki = sati + (minute / 60);
     const ugaoSatiGlatki = (360/12)*satiGlatki; // sati glatki ugao (0, 0.01, 0.2, 0.5)
 
+    let jsxSezdesetCrtica:any = [];
+    for (let s = 0; s <= 59; s++) {
+        const ugao=(360/60)*s;
+        jsxSezdesetCrtica.push(
+            (
+                <div key={s} className="nosac-kazaljke" style={{
+                    transform: 'rotate(' + ugao + 'deg)'
+                }}>
+                    <div className="crtica-sekunde"></div>
+                </div>
+            )
+        );
+    }
+
+    let jsxDvanaestCrtica:any = [];
+    for (let d = 0; d<=11; d++) {
+        const ugao=(360/12)*d;
+        jsxDvanaestCrtica.push(
+            (
+                <div key={d} className="nosac-kazaljke" style={{
+                    transform: 'rotate(' + ugao + 'deg)'
+                }}>
+                    <div className="crtica-sati"></div>
+                </div>
+            )
+        )
+    }
+
 
 
     return (
         <div className="analog-clock-widget">
             <div className="clock-circle-bg">
 
-                <div className="nosac-kazaljke" style={{
-                    transform: 'rotate(' + ugaoSati + 'deg)'
-                }}>
-                    <div className="kazaljka-sati"></div>
-                </div>
+                {jsxSezdesetCrtica}
+                {jsxDvanaestCrtica}
+
                 <div className="nosac-kazaljke" style={{
                     transform: 'rotate(' + ugaoSatiGlatki + 'deg)'
                 }}>

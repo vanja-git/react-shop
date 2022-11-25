@@ -102,6 +102,23 @@ img {width:100%; max-width:100%; height:auto;}
         width:4px;
         height:45px;
       }
+      >.crtica-sekunde {
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: red;
+        width:2px;
+        height:2px;
+      }
+
+      >.crtica-sati {
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: red;
+        width:2px;
+        height:8px;
+      }
 
     }
   }
