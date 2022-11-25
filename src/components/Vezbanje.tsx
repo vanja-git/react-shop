@@ -18,6 +18,13 @@ import RedKockica from "./RedKockica";
 import RedPovecajSmanji from "./RedPovecajSmanji";
 import ViseManjeBoja from "./ViseManjeBoja";
 import Bockalica from "./Bockalica";
+import Test1Red from "./Test1Red";
+import Test1Matrix from "./Test1Matrix";
+import KockicaBojaPametna from "./KockicaBojaPametna";
+import Test1 from "./Test1";
+import Test1Bockalica from "./Test1Bockalica";
+import { useSelector } from "react-redux";
+import ClockUniversal from "./ClockUniversal";
 
 const gyms = [
   {
@@ -45,11 +52,30 @@ const gyms = [
 
 
 const Vezbanje = () => {
+  const nesto = useSelector(state=>state)
+  console.log('nesto iz redux statea', nesto);
+
   return (
     <div className="App">
       
-      Hello I'am App
+      Hello I'am App<br /><br />
+      <ClockUniversal />
+      Test1Bockalica<br />
+      <Test1Bockalica /><br /><br /><br />
+      Test1Matrix<br />
+      <Test1Matrix kolikoRedova1={3} kolikoKolona1={5} />
+      Test1Red<br />
+      <Test1Red kolikoKolona1={2} />
+      Test1<br />
+      <Test1 />
+      <br />
+      <br />
+      Kockica Bockalica<br />
+      <KockicaBojaPametna />
+      Red Kockica<br />
+      <RedKockica kolikoKolona={5} />
       <MyFirstComponent />
+      <br />
       <Bockalica />
       <br />
       <br />

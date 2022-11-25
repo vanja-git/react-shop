@@ -1,5 +1,4 @@
 import PovecajSmanji from "./PovecajSmanji";
-import PametnaKockica from "./PametnaKockica";
 
 const RedKockica = (props: any) => {
   const kolikoKolona = props.kolikoKolona;

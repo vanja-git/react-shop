@@ -1,4 +1,3 @@
-import PametnaKockica from "./PametnaKockica";
 import RedKockica from "./RedKockica";
 
 const MatrixKockica = (props: any) => {
@@ -7,15 +6,12 @@ const MatrixKockica = (props: any) => {
 
   let jsxRedovi = [];
   for (let i = 1; i <= kolikoRedova; i++) { // ovde sklapamo jedan red
-    jsxRedovi.push(<RedKockica kolikoKolona={kolikoKolona} tipKockica={props.tipKockica} selectedColor={props.selectedColor} />);
+    jsxRedovi.push(<RedKockica key={i} kolikoKolona={kolikoKolona} tipKockica={props.tipKockica} selectedColor={props.selectedColor} />);
   }
 
 
   return (
-    <div className="">ovde ce biti matrix
-      {jsxRedovi}
-
-    </div>
+    <div className="">ovde ce biti matrix{jsxRedovi}</div>
   )
 }
 

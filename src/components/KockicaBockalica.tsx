@@ -11,10 +11,7 @@ const KockicaBockalica = (props: any) => {
     };
 
     return (
-        <div
-            className={"kockica " + color}
-            onClick={HandleClick}
-        ></div>
+        <div className={"kockica " + color} onClick={HandleClick}></div>
     );
 };
 

@@ -55,4 +55,54 @@ img {width:100%; max-width:100%; height:auto;}
 
 .red-povecajsmanji .plusminus-wrap  {border:2px solid blue; margin-right:15px;width: 280px; height: 40px;} 
 
+.red-sivekockice {display: flex; flex-direction:row;}
+.testone {width:50px; height:50px; background-color: grey; border: 1px solid black;}
 
+
+
+.analog-clock-widget {
+  padding:20px;
+  .clock-circle-bg {
+    position: relative;
+    background-color:silver;
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+
+    .nosac-kazaljke {
+      position: absolute;
+      top:0;
+      left:99px;
+      width:2px;
+      height:200px;
+      /* background-color: blue; */
+      /* outline: 1px dashed blue; */
+
+      >.kazaljka-sekunde {
+        position: absolute;
+        top:10px;
+        background-color: red;
+        width:2px;
+        height:90px;
+      }
+
+      >.kazaljka-minute {
+        position: absolute;
+        top:35px;
+        left:-1px;
+        background-color: red;
+        width:4px;
+        height:65px;
+      }
+      >.kazaljka-sati {
+        position: absolute;
+        top:55px;
+        left:-1px;
+        background-color: red;
+        width:4px;
+        height:45px;
+      }
+
+    }
+  }
+}

@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const PovecajSmanji = () => {
-  const [klikrezultat, setplus] = useState(0);
   /*
   to sto dobijem sa useState je state (lokalni state od react komponente), 
   state dolazi u vidu dve promenjive jedna za citanje statea a druga za izmenu
